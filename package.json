@@ -1,0 +1,27 @@
+{
+  "name": "luna",
+  "version": "1.0.0",
+  "description": "Integração Front-End com Back-End",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix Luna-web-BackEnd && npm install --prefix Luna-web-FrontEnd/luna-front",
+    "dev:back": "cd Luna-web-BackEnd && npm start",
+    "dev:front": "cd Luna-web-FrontEnd/luna-front && npm run dev",
+    "dev": "concurrently \"npm run dev:back\" \"npm run dev:front\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LunaSquad/Luna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/LunaSquad/Luna/issues"
+  },
+  "homepage": "https://github.com/LunaSquad/Luna#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
